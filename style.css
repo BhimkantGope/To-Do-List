@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    font-family: 'Poppins', jost;
+    box-sizing: border-box; 
 }
 
 .container {
@@ -12,12 +12,38 @@
     padding: 10px;
 }
 
+.scroll-down {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #001e4d;
+    background-color: #edeef0;
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.scroll-down:hover {
+    color: #fff;
+    background-color: #001e4d;
+    box-shadow: 0px 0px 1.5px #fff;
+}
+
+.scroll-down span {
+    font-weight: bold;
+}
+
 .todo-app {
     width: 100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    margin: 40px auto;
+    padding: 40px 30px 50px;
     border-radius: 10px;
 }
 
@@ -25,6 +51,7 @@
     color: #002765;
     display: flex;
     align-items: center;
+    margin-left: 5px;
     margin-bottom: 20px;
 }
 
@@ -39,8 +66,8 @@
     justify-content: space-between;
     background: #edeef0;
     border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 input{
@@ -65,18 +92,20 @@ button {
 
 ul li {
     list-style: none;
-    font-size: 17px;
+    font-size: 1rem;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 ul li::before{
     content: '';
     position: absolute;
-    height:28px;
-    width:28px;
+    height:1.5rem;
+    width:1.5rem;
     border-radius: 50%;
     background-image: url("images/unchecked.png");  
     background-size: cover;
@@ -100,7 +129,6 @@ ul li span {
     top: 5px;
     width: 40px;
     height: 40px;
-    font-size: 22px;
     color: #555;
     line-height: 40px;
     text-align: center;
@@ -109,4 +137,19 @@ ul li span {
 
 ul li span:hover {
     background-color: #edeef0;
+}
+
+.edit-icon {
+    display: inline-block;
+    transform: scaleX(-1);
+    margin-right: 2rem;
+    font-size: 16px;
+    margin-top: 2.5px
+}
+
+.delete-icon {
+    font-size: 22px;.delete-icon {
+    cursor: pointer;
+    pointer-events: auto; /* ensure clicks register on span, not parent */
+}
 }

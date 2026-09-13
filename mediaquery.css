@@ -1,0 +1,33 @@
+@media (max-width: 700px) {
+  .todo-app {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  button {
+    padding: 12px 40px;
+  }
+
+  ul li::before {
+    height: 1rem;
+    width: 1rem;;
+  }
+}
+
+@media (max-width: 360px) {
+  .todo-app {
+    padding: 30px 20px 40px;
+  }
+
+  .row {
+    padding-left: 1rem;
+  }
+
+  button {
+    padding: 10px 35px;
+    font-size: 14px;
+  }
+}
+
+

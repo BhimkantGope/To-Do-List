@@ -82,7 +82,7 @@ let scrollIcon = document.querySelector(".scroll-down span");
 scrollIcon.innerHTML = "\u2193"; // shuru me down arrow
 
 window.addEventListener("scroll", function() {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 10) {
         scrollIcon.innerHTML = "\u2191"; // upar scroll ho gaya, ab up arrow dikhao
     } else {
         scrollIcon.innerHTML = "\u2193"; // upar hi hai, down arrow dikhao
@@ -90,7 +90,7 @@ window.addEventListener("scroll", function() {
 });
 
 scrollBtn.addEventListener("click", function() {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 10) {
         window.scrollTo({ top: 0, behavior: 'smooth' }); // top pe le jao
     } else {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); // bottom pe le jao

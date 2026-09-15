@@ -14,7 +14,8 @@ function addTask() {
         if(editingItem) {
             editingItem.firstChild.textContent = taskText;
             editingItem = null;
-            inp.value = "";
+            inp.value = ""; 
+            saveData();
             return;
         }
 

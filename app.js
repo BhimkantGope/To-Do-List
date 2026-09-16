@@ -36,7 +36,7 @@ function addTask() {
     inp.value = "";
     saveData();
 }
-inp.addEventListener("keydown", function(event) {
+inp.addEventListener("keypress", function(event) {
     if(event.code == "Enter") {
         addTask();
     }

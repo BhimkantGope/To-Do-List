@@ -3,6 +3,7 @@ const btn = document.querySelector("button");
 const ul = document.querySelector("ul");
 
 let editingItem = null;
+inp.focus();
 
 function addTask() {
     const taskText = inp.value.trim();
